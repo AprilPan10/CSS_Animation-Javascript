@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700&display=swap');
+/* TABLE OF CONTENTS
+ * =================
+ * 1.GENERAL STYLES 
+ * 2.MY COMPUTER STYLES
+*/
+/*. 1.GENERAL STYLES */
+
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing:inherit;
+}
+body {
+    margin:0;
+    font-family: 'Hind Siliguri', sans-serif;
+    background-color: #FFCF80;
+    color: #B2B8F1;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Sarina', cursive;
+}
+h1{
+    text-align: center;
+    color: #B2B8F1;
+    font-size: 2em;
+}
+P{
+    text-align: center;
+    font-size: 1.2em;
+}
+.page-wrapper {
+    max-width:1200px;
+    margin:0 auto;
+}
+/*. 2.MY COMPUTER STYLES */
+#computer {
+    position: relative;
+/*    transition: transform 3s;*/
+}
+#text {
+    position:absolute;
+    left:43em;
+    top:18em;
+}
+#mouse {
+    position:absolute;
+    left:55em;
+    top:45em;
+    animation: mouse-move 2s;
+}
+@keyframes mouse-move {
+  0% {
+      top: 44em;
+      left: 50em;
+    }
+  25% ,75% {
+      top: 47em;
+      left: 52em;
+    }
+   100% {
+      top: 44em;
+      left: 50em;  
+    }
+    
+}
+#clock {
+    position:absolute;
+    left:10em;
+    top:40em;
+    animation: clockknock 3s 6s 2 linear;
+}
+@keyframes clockknock {
+  0%, 30%, 70%{
+    top:38em;
+    left: 10em;
+    transform: scale(1);
+  }
+
+  15%, 45% {
+    transform: scale(1.5);
+  }
+
+}
+
+#tools {
+    position:absolute;
+    left:19em;
+    top:16em;
+}
+#color {
+    position:absolute;
+    left:7em;
+    top:25em;
+    
+}
+#svgDiv {
+    position:absolute;
+    left:29.25em;
+    top:14em;
+}
+#fill-pink {
+    position:absolute;
+    left:7em;
+    top:18em;
+    display: none;
+    animation: pink-fill 2s 1s;
+}
+@keyframes pink-fill {
+    0%{
+        top:18em;
+        left:7em;
+    }
+    100%{
+        top:16em;
+        left:20em;
+    }
+}
+#fill-green {
+    position:absolute;
+    left:7em;
+    top:18em;
+    display: none;
+    animation: green-fill 2s 1s;
+}
+@keyframes green-fill {
+    0%{
+        top:18em;
+        left:7em;
+    }
+    100%{
+        top:16em;
+        left:20em;
+    }
+}
+#fill-blue {
+    position:absolute;
+    left:7em;
+    top:18em;
+    animation: blue-fill 2s 3s;
+}
+@keyframes blue-fill {
+    0%{
+        top:18em;
+        left:7em;
+    }
+    100%{
+        top:16em;
+        left:20em;
+    }
+}
+#fill-yellow {
+    position:absolute;
+    left:7em;
+    top:18em;
+    display: none;
+    animation: yellow-fill 2s 1s;
+}
+@keyframes yellow-fill {
+    0%{
+        top:18em;
+        left:7em;
+    }
+    100%{
+        top:16em;
+        left:20em;
+    }
+}
+#lefthand {
+    position:absolute;
+    left:0em;
+    top:18em;
+    animation: lefthand-move 2s 3s;
+}
+@keyframes lefthand-move {
+    0%{
+        top:18em;
+        left:0em;
+    }
+    100%{
+        top:16em;
+        left:14em;
+    }
+}
+#lefthandgreen {
+    position:absolute;
+    left:0em;
+    top:18em;
+    display: none;
+    animation: lefthand-move 2s 1s;
+}
+@keyframes lefthand-move {
+    0%{
+        top:18em;
+        left:0em;
+    }
+    100%{
+        top:16em;
+        left:14em;
+    }
+}
+#lefthandpink {
+    position:absolute;
+    left:0em;
+    top:18em;
+    display: none;
+    animation: lefthand-move 2s 1s;
+}
+@keyframes lefthand-move {
+    0%{
+        top:18em;
+        left:0em;
+    }
+    100%{
+        top:16em;
+        left:14em;
+    }
+}
+#lefthandyellow {
+    position:absolute;
+    left:0em;
+    top:18em;
+    display: none;
+    animation: lefthand-move 2s 1s;
+}
+@keyframes lefthand-move {
+    0%{
+        top:18em;
+        left:0em;
+    }
+    100%{
+        top:16em;
+        left:14em;
+    }
+}
+#righthand{
+    position:absolute;
+    left:40em;
+    top:35em;
+    animation: righthand-move 3s  alternate;
+}
+@keyframes righthand-move {
+     0%{
+        top:40em;
+        left:35em;
+    }
+    97%{
+        top:11em;
+        left: 31em;
+    }
+    100%{
+        top:11em;
+        left: 31em;
+    }
+}
+#smallwhite {
+    position:absolute;
+    left:28em;
+    top:13em;
+}
+#white {
+    position:absolute;
+    left:24em;
+    top:20em;  
+}
+#flowerblue{
+    position:absolute;
+    left:27em;
+    top:21em; 
+}
+#flowerpink{
+    position:absolute;
+    left:27em;
+    top:21em; 
+    display: none;
+    
+}
+#flowergreen{
+    position:absolute;
+    left:27em;
+    top:21em; 
+    display: none;
+}
+#floweryellow{
+    position:absolute;
+    left:27em;
+    top:21em; 
+    display: none;
+}
+#sticker {
+    position:absolute;
+    left:35em;
+    top:10em; 
+}
+#font {
+    position:absolute;
+    left:39em;
+    top:18em;
+}
+#mid {
+    position:absolute;
+    left:23em;
+    top:29em;
+    transition: all 2s;
+}
+#mid:hover{
+    transform: scale(1.5);
+}
+#float {
+    position:absolute;
+    left:54em;
+    top:15em;
+    transition: all 2s;
+}
+#float:hover{
+    transform: scale(1.5);
+}
+#finalbase{
+    position:absolute;
+    left:17.8em;
+    top:10em;
+    display: none;
+}
+#finalpink{
+    position:absolute;
+    left:23em;
+    top:24em;
+    display: none;
+    animation: finalpink-move 2s;
+}
+@keyframes finalpink-move {
+    0% {
+       
+        left: 15em;
+        top:24em;
+    }
+    100% {
+       
+        left: 23em;
+        top:24em;
+    }
+}
+#mountain {
+    position:absolute;
+    left:23em;
+    top:11em;
+    display: none;
+    animation: mountain-move 2s;
+}
+@keyframes mountain-move {
+    0%{
+        left: 23em;
+        top: 0;
+    }
+    100% {
+        left:23em;
+        top:11em;
+    }
+}
+#finaltext{
+    position:absolute;
+    left:37em;
+    top:11em;
+    display: none;
+    animation: finaltext-move 2s;
+}
+@keyframes finaltext-move {
+    
+    0% {
+    transform: translateY(-50em) scale(0.8);
+  }
+
+    70% {
+    transform: translateY(0em) scale(0.8);
+  }
+
+    100% {
+    transform: scale(1);
+  }
+}
+#play {
+    position:absolute;
+    left:55em;
+    top:28em;
+}
+#uparrows{
+    position:absolute;
+    left:-9em;
+    top:-9em;
+}
+#rightarrows{
+    position:absolute;
+    left:18em;
+    top:9em;
+}
+#metion {
+    position:absolute;
+    left:36em;
+    top:4em;
+}
+#final {
+    position:absolute;
+    left:61em;
+    top:31em;
+}
+
