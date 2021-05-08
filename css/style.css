@@ -403,6 +403,12 @@ P{
 #final {
     position:absolute;
     left:61em;
-    top:31em;
+    top:25em;
+}
+@media (max-width: 650px) {
+    .page-wrapper {
+    max-width:600px;
+    margin:0 auto;
+}
 }
 
